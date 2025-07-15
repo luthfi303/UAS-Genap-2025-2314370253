@@ -1,0 +1,7 @@
+node_modules
+resources
+tests
+.env
+.env.example
+vite.config.js
+webpack.mix.js
