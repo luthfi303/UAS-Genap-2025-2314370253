@@ -1,0 +1,48 @@
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+.content-wrapper {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Optional: Fix for navbar */
+.navbar {
+    z-index: 1030;
+}
+
+/* Responsive sidebar hide on small screen */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content-wrapper {
+        margin-left: 0;
+    }
+}
